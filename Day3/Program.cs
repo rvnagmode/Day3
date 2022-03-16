@@ -68,7 +68,44 @@ namespace Day3
             {
                 Console.WriteLine(x);
             }
-            
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("stack");
+            Stack stk = new Stack();
+            stk.Push(1);
+            stk.Push(2);
+            stk.Push(13);
+            stk.Push(14);
+            stk.Push(15);
+            stk.Push(17);
+            stk.Push(18);
+            stk.Push(19);
+            stk.Pop();
+            foreach(object x in stk)
+            {
+                Console.WriteLine(x);
+            }
+
+            Console.WriteLine("------------------------");
+            Console.WriteLine(  "Queue");
+            Queue q = new Queue();
+            q.Enqueue(1);
+            q.Enqueue(2);
+            q.Enqueue(3);
+            q.Enqueue(4);
+            q.Enqueue(5);
+            q.Enqueue(6);
+            q.Dequeue();
+            foreach(object x in q)
+            {
+                Console.WriteLine(x);
+            }
+
+
+
+
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------");
+           
 
         }
     }
