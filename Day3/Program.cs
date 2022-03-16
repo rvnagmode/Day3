@@ -100,12 +100,96 @@ namespace Day3
                 Console.WriteLine(x);
             }
 
-
-
-
-            Console.WriteLine();
             Console.WriteLine("-----------------------------------");
-           
+            Console.WriteLine("HashTable");
+            Hashtable hs = new Hashtable();
+            hs.Add(1, "uk");
+            hs.Add(2, "ind");
+            hs.Add(3, "aus");
+            hs.Add(4, "nz");
+            hs.Add(5, "sl");
+            hs.Add(6, "wi");
+            hs.Add(7, null);
+            hs.Add(8, null);
+            hs.Remove(2);
+            foreach(DictionaryEntry x in hs)
+            {
+                Console.WriteLine(x.Key+" "+x.Value);
+            }
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("custom list");
+            List<Product> pro = new List<Product>();
+            
+            Product p1 = new Product(101,"mobile",10000);
+            Product p2 = new Product(102,"charger",1000);
+            Product p3 = new Product(103,"headpone",500);
+            pro.Add(p1);
+            pro.Add(p2);
+            pro.Add(p3);
+            foreach (Product x in pro)
+            {
+                Console.WriteLine(x);
+            }
+            
+            Console.WriteLine("--------------or---------------");
+            List<Product> pro1 = new List<Product>() 
+            {
+                new Product(101,"mobile",10000),
+                new Product(102, "charger", 1000),
+                new Product(103, "headpone", 500)
+            };
+            foreach (Product x in pro1)
+            {
+                Console.WriteLine(x);
+            }
+
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("custom stack");
+            Stack<Product> s = new Stack<Product>();
+            Product p4 = new Product(101, "mobile", 10000);
+            Product p5 = new Product(102, "charger", 1000);
+            Product p6 = new Product(103, "headpone", 500);
+            s.Push(p4);
+            s.Push(p5);
+            s.Push(p6);
+            foreach (Product x in s)
+            {
+                Console.WriteLine(x);
+            }
+
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("custom queue");
+            Queue<Product> que = new Queue<Product>();
+            Product p7 = new Product(101, "mobile", 10000);
+            Product p8 = new Product(102, "charger", 1000);
+            Product p9 = new Product(103, "headpone", 500);
+            que.Enqueue(p7);
+            que.Enqueue(p8);
+            que.Enqueue(p9);
+            foreach(Product x in que)
+            {
+                Console.WriteLine(x);
+            }
+
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Dictionary");
+            
+            Dictionary<int, string> dic = new Dictionary<int, string>();
+            dic.Add(1, "rushi");
+            dic.Add(2, "raj");
+            dic.Add(3, "sanju");
+            dic.Add(4, "khali");
+            dic.Add(5, "bali");
+            dic.Add(6, "ganu");
+
+            foreach(KeyValuePair<int,string> x in dic)
+            {
+                
+                Console.WriteLine(x);
+            }
 
         }
     }

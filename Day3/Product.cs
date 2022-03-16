@@ -28,5 +28,9 @@ namespace Day3
                 Console.WriteLine("final price = " + price);
             
         }
+        public override string ToString()
+        {
+            return "product code = " + pcode + " product name = " + pname + " product price = " + price;
+        }
     }
 }
