@@ -9,6 +9,7 @@ namespace Day3
        private string pname;
        private double price;
        private double dis;
+       private double disprice;
         public Product(int pcode,string pname,double price)
         {
             this.pcode = pcode;
@@ -19,9 +20,9 @@ namespace Day3
         {
             if(price>5000)
             {
-                dis = 5000 - (5000 * 0.10);
-               
-                Console.WriteLine("Discounted price = " + dis);
+                dis =(price * 0.10);
+                disprice = price - dis;
+                Console.WriteLine("Discounted price = " + disprice);
             }
             else
                 Console.WriteLine("final price = " + price);
