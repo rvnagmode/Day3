@@ -191,6 +191,15 @@ namespace Day3
                 Console.WriteLine(x);
             }
 
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("mygeneric");
+            MyGeneric<int> mg = new MyGeneric<int>(10);
+            Console.WriteLine("for int = "+mg);
+
+            MyGeneric<string> mgstr = new MyGeneric<string >("rushi");
+            Console.WriteLine("for string = " + mgstr);
+
+            
         }
     }
 }
